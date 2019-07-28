@@ -1,4 +1,4 @@
-# CodeCeption-Automation-Code
+﻿# CodeCeption-Automation-Code
 This is a repo containing the automation code for some scenarioes at qartCamp website
 
 # Short Description of the repo
@@ -16,7 +16,7 @@ This repo containing a utomation code scenarioes for CodeCeption . It has 5 Juni
 1- Install Ecipse IDE
 2- Install Java at the system [JDK / JRE]
 3- Add JAVA_HOME path at system variables pointing to Bin directory . Verify be opening terminal and send java --version
-4- There is a folder accompanied with the repo named "Test Artifacts" containing the 7 images [You can find it at Test Artifacts.rar] . An image used for update status at test method C_Update_Status() . Another 5 images used for creating an album at test method D_CreateAlbum_UploadMedia() and finally another pic profile used at method E_Change_Cover_Image() . We need to set this folder at C:/ partion at Windows at the root
+4- There is a folder at the root of the repo named "Test Artfacts" contains the chrome driver , 6 images and a profile picture. An image used for update status at test method C_Update_Status() . Another 5 images used for creating an album at test method D_CreateAlbum_UploadMedia() and finally another profile picture used at method E_Change_Cover_Image() .
 5- Import the project at Eclipse IDE by File > Import ... > General > Exsiting Project into Workspace > Next > Browse for project dir > Next and Finish
 
 # How to run the project locally
