@@ -18,6 +18,15 @@ This repo containing a utomation code scenarioes for CodeCeption . It has 5 Juni
 3- Add JAVA_HOME path at system variables pointing to Bin directory . Verify be opening terminal and send java --version
 4- There is a folder at the root of the repo named "Test Artfacts" contains the chrome driver , 6 images and a profile picture. An image used for update status at test method C_Update_Status() . Another 5 images used for creating an album at test method D_CreateAlbum_UploadMedia() and finally another profile picture used at method E_Change_Cover_Image() .
 5- Import the project at Eclipse IDE by File > Import ... > General > Exsiting Project into Workspace > Next > Browse for project dir > Next and Finish
+6- There is a folder at "Test Artifacts" folder named as "Selenium Library" . You need to import all the jars at this folder before
+execution as Right click on the project > Build Path > Configure Build Path > Add External Jars > Browse for the Jars
+* client-combined-3.141.59.jar
+* client-combined-3.141.59-sources.jar
+* commons-io-2.6.jar
+* hamcrest-core-1.3.jar
+* junit-4.11.jar
+* All the Jars at libs folder
+then click Apply and Close
 
 # How to run the project locally
 1- Open the class file CodeCeptionTests.java from Src > CodeCeptionTests.java
