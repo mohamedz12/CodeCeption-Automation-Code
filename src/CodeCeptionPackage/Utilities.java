@@ -31,4 +31,9 @@ public class Utilities extends BaseTests{
 		 robot.keyRelease(KeyEvent.VK_ENTER);
 	}
 	
+	public String GetPath(String filepath) {
+		File file=new File(filepath);
+		return file.getAbsolutePath();		
+	}
+	
 }
