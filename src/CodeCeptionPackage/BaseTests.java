@@ -10,15 +10,26 @@ import org.openqa.selenium.chrome.*;
 public class BaseTests {
 
 	//Driver Declaration
-    public WebDriver driver;
+    public static WebDriver driver;
     public File scrFile;
     @Before
     public void Setup() {
     	 
-     // Driver installation		 
+     // Detect current OS
+    String osname = System.getProperty("os.name").toLowerCase();
+    System.out.println(osname);
+     // Driver installation
+    if(osname.contains("win"))
+    {
      System.setProperty("webdriver.chrome.driver", "./Test Artifacts/chromedriver.exe");
-   	 driver=new ChromeDriver();
-   	 driver.manage().window().maximize();
+     driver=new ChromeDriver();	
+     driver.manage().window().maximize();
+    }else if(osname.contains("mac"))
+    {
+     System.setProperty("webdriver.chrome.driver", "./Test Artifacts/chromedriver");
+     driver=new ChromeDriver();
+     driver.manage().window().setSize(new Dimension(1500, 1200));
+    }
    	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
    	 
    	 

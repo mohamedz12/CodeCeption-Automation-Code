@@ -60,8 +60,9 @@ public class CodeCeptionTests extends BaseTests {
 		 driver.findElement(By.id("rtmedia-add-media-button-post-update")).click();
 		 Thread.sleep(2000);
 		 ut.UploadFile(ut.GetPath("Test Artifacts/Image_1.jpg"));
-		 Thread.sleep(2000);
-		 driver.findElement(By.id("aw-whats-new-submit")).click(); 
+		 Thread.sleep(3000);
+		 driver.findElement(By.id("whats-new")).click();
+		 driver.findElement(By.name("aw-whats-new-submit")).click();
 		 Thread.sleep(10000);
 		 Actions action=new Actions(driver);
 		 action.moveToElement(driver.findElement(By.xpath(".//ul[@id='activity-stream']/li[1]"))).build().perform();
@@ -98,11 +99,13 @@ public class CodeCeptionTests extends BaseTests {
 		 Thread.sleep(3000);
 		 driver.findElement(By.id("rtm_show_upload_ui")).click();
 		 Thread.sleep(3000);		
+		 
 		 driver.findElement(By.id("rtMedia-upload-button")).click();
 		 Thread.sleep(2000);
 		 Actions action=new Actions(driver);
 		 action.moveToElement(driver.findElement(By.id("rtMedia-upload-button"))).build().perform();
-		 Thread.sleep(2000);
+		 Thread.sleep(2000);		 
+		 
 		 ut.UploadFile(ut.GetPath("Test Artifacts/Image_2.jpg"));
 		 Thread.sleep(2000);
 		 driver.findElement(By.id("rtMedia-upload-button")).click();
